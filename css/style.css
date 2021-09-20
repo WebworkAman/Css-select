@@ -1,0 +1,81 @@
+@import url('reset.css');
+
+.wrapper{
+
+    background-image: url('../img/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1200px;
+
+    overflow: hidden;
+    
+}
+nav{
+    background-color: gray;
+    width: 800px;
+    height: 5vh;
+    margin: 0 auto;
+    margin-top: 100px;
+    line-height: 5vh;
+}
+nav ul{
+    /* display: flex; */
+    display: flex;
+}
+nav ul li{
+    width: 100%;
+    text-align: center;
+}
+nav ul>li:not(:last-child){
+    border-right: 1px solid seashell;
+}
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+}
+nav ol{
+    display: none;
+    border: 1px solid #ccc;
+}
+nav ol>li{
+    background-color: whitesmoke;
+    width: 158px;
+    
+}
+nav ol li a{
+    color: black;
+    
+}
+
+main{
+    display: block;
+    margin: 0 auto;
+    
+}
+main img{
+    display: block;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
+
+/* ------------- hover & show ------------- */
+
+nav ul li:hover{
+    background-color: #333;
+    color: whitesmoke;
+}
+nav ul li:hover ol{
+    display: block;
+    position: absolute;
+    border-top: 1px solid seashell;
+
+}
+nav ol > li:hover{
+    background-color: #333;
+   
+}
+nav ol > li:hover a{
+    color: white;
+}
